@@ -1,0 +1,11 @@
+dependencies {
+
+    /* library */
+
+    // ksuid
+    implementation 'com.github.ksuid:ksuid:1.1.2'
+
+    // mapStruct
+    implementation 'org.mapstruct:mapstruct:1.5.5.Final'
+    annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.5.Final'
+}
