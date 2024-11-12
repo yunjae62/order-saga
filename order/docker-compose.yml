@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: 'postgres:16.4'
+    environment:
+      - 'POSTGRES_DB=sample'
+      - 'POSTGRES_PASSWORD=1234'
+      - 'POSTGRES_USER=sample'
+    ports:
+      - '54325:5432'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+  redis:
+    image: 'redis:latest'
+    ports:
+      - '63795:6379'
+    volumes:
+      - redis_data:/data
+
+volumes:
+  postgres_data:
+  redis_data:
